@@ -1,0 +1,6 @@
+{
+	"include": ["src/typescript/**/*.ts"],
+	"compilerOptions": {
+		"outDir": "public/js/"
+	}
+}
