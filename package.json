@@ -1,0 +1,39 @@
+{
+  "name": "practica_01",
+  "version": "1.0.0",
+  "description": "Practica 1 Para Desarrollo de aplicaciones de Escritorio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoSo3/APW_Practica_01.git"
+  },
+  "keywords": [
+    "Practica",
+    "Web",
+    "SASS",
+    "Typescript",
+    "Babel",
+    "Gulp"
+  ],
+  "author": "Gustavo Sotres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavoSo3/APW_Practica_01/issues"
+  },
+  "homepage": "https://github.com/gustavoSo3/APW_Practica_01#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "nodemon": "^2.0.13",
+    "sass": "^1.42.1",
+    "typescript": "^4.4.3"
+  }
+}
