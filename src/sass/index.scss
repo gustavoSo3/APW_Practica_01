@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "colors";
+@import "media";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $background-color;
+}
+
+header {
+  background-color: $primary-color;
+  height: 50px;
+  h1 {
+    padding: 10px;
+    text-align: center;
+    color: $background-color;
+  }
+}
+
+.search-bar {
+  background-color: $secundary-color;
+  padding: 10px;
+  margin: auto;
+  .container {
+    margin: auto;
+    input {
+      width: 75%;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      height: 30px;
+    }
+    button {
+      height: 30px;
+      width: 20%;
+
+      border: none;
+      border-radius: 5px;
+
+      background-color: white;
+      color: black;
+
+      &:active {
+        background-color: $accent-color;
+        color: white;
+      }
+    }
+  }
+}
+
+#news-container {
+  margin: auto;
+  > div {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  > .news-item {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    h2 {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+    p {
+      text-align: justify;
+    }
+    a {
+      display: block;
+      padding: 5px 0;
+      text-decoration: none;
+      background-color: $secundary-color;
+      color: white;
+    }
+  }
+}
+#news-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@include tablet {
+  #news-container {
+    .news-item {
+      width: calc(100% / 3);
+    }
+  }
+}
+@include desktop {
+  #news-container {
+    .news-item {
+      width: calc(100% / 4);
+    }
+  }
+}

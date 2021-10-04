@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F1F2F6;
+}
+
+header {
+  background-color: #27187E;
+  height: 50px;
+}
+header h1 {
+  padding: 10px;
+  text-align: center;
+  color: #F1F2F6;
+}
+
+.search-bar {
+  background-color: #758BFD;
+  padding: 10px;
+  margin: auto;
+}
+.search-bar .container {
+  margin: auto;
+}
+.search-bar .container input {
+  width: 75%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+.search-bar .container button {
+  height: 30px;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.search-bar .container button:active {
+  background-color: #AEB8FE;
+  color: white;
+}
+
+#news-container {
+  margin: auto;
+}
+#news-container > div {
+  float: left;
+  box-sizing: border-box;
+}
+#news-container > .news-item {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+#news-container > .news-item img {
+  width: 100%;
+}
+#news-container > .news-item h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#news-container > .news-item p {
+  text-align: justify;
+}
+#news-container > .news-item a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  background-color: #758BFD;
+  color: white;
+}
+
+#news-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 600px) {
+  #news-container .news-item {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #news-container .news-item {
+    width: 25%;
+  }
+}
